@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #111827;
+    color: white;
+}
+/* Header Section */
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: right;
+}
+.ham{
+    display: none;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    
+}
+ul li{
+    list-style: none;
+   
+}
+.wav{
+    height: 50px;
+    width: 50px;
+}
+.home{
+    background-color: rgb(9, 127, 201);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+/* Mid Section  */
+.middle_top{
+    display: flex;
+    gap: 10px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 250px;
+    width: 50vw;
+}
+.wave_name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pc{
+    width: 450px;
+    height: 550px;
+}
+main div div h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+main div div h2 p{
+    font-weight: 600;
+    font-size: 35px;
+}
+.middle_mid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.pic{
+    height: 350px;
+    width: 350px;
+}
+.grid_pic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mid_heading{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 25px;
+}
+/* Footer Section */
+.bottom_img{
+    height: 25px;
+    width: 25px;
+}
+.bottom_heading{
+    text-align: center;
+    font-weight: 700;
+}
+.hr{
+    border: 3px solid blue;
+    width: 150px;
+    margin: auto;
+}
+.bottom_img_size{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+    body{
+        text-align: center;
+    }
+    ul{
+        display: none;
+    }
+    .ham{
+        display: block;
+        width: 20px;
+    }
+    nav{
+        justify-content: left;
+    }
+    li{display: none;}
+    .middle_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .pc{
+        width: 60vw;
+    }
+    .mid_heading{
+        font-size: 35px;
+        text-align: center;
+    }
+    .middle_mid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .left{
+        display: contents;
+    }
+    .pic{
+        width: 55vw;
+    }
+    .bottom_heading{
+        font-size: 35px;
+    }
+    .wave_name h3{
+        font-size: 20px;
+    }
+    .md{
+        font-size: 40px;
+    }
+}
+
